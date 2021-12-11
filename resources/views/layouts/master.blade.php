@@ -73,17 +73,14 @@
     </script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('backend/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <!-- DataTables -->
-    <script src="{{ asset('backend/plugins/datatables/jquery.dataTables.min.js"></script') }}>
-        <script src=" {{ asset('backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script') }}>
-        < script src = "{{ asset('backend/plugins/datatables-responsive/js/dataTables.responsive.min.js"></') }}> <
-            script src =
-            "{{ asset('backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script') }}> <
-            !--ChartJS-- >
-            <
-            script src = "{{ asset('backend/plugins/chart.js/Chart.min.js') }}" >
-    </script>
-    <!-- Sparkline -->
+     <!-- DataTables -->
+     <script src="{{ asset('backend/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+     <script src="{{ asset('backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+     <script src="{{ asset('backend/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+     <script src="{{ asset('backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+    <!--ChartJS-- >
+    <script src = "{{ asset('backend/plugins/chart.js/Chart.min.js') }}" ></script>
+    <-- Sparkline -->
     <script src="{{ asset('backend/plugins/sparklines/sparkline.js') }}"></script>
     <!-- JQVMap -->
     <script src="{{ asset('backend/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
