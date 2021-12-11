@@ -24,3 +24,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users');
 Route::get('/users/add', [App\Http\Controllers\UserController::class, 'create'])->name('users-add');
 Route::post('/users/store', [App\Http\Controllers\UserController::class, 'store'])->name('users-store');
+Route::get('/users/edit/{id}', [App\Http\Controllers\UserController::class, 'edit'])->name('users-edit');
+Route::post('/users/update', [App\Http\Controllers\UserController::class, 'update'])->name('users-update');
+Route::get('/users/delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->name('users-delete');
+
+

@@ -55,7 +55,10 @@
                                 <td>{{$user->level == '1' ? 'Admin' : 'Kasir' }}</td>
                                 </td>
                                
-                                <td>X</td>
+                                <td>
+                                <a href="{{route('users-edit', $user->id)}}"class="btn btn-success">Edit</a>
+                                <a href="{{route('users-delete', $user->id)}}"class="btn btn-danger">Hapus</a>
+                                </td>
                               </tr>
                               @empty
                                   
