@@ -32,7 +32,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form" action="{{ route('users-store')}}" method="POST">
+                        <form role="form" action="{{ route('kategori-store')}}" method="POST">
                             @csrf
                           <div class="card-body">
                             <div class="form-group">
@@ -41,7 +41,7 @@
                                 <span class="text-danger">{{$errors->first('name')}}</span>
                               </div>
                            
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                               <label for="email">Email address</label>
                               <input type="email" class="form-control" id="email" name="email" value="{{old('email')}}" placeholder="Enter email">
                               <span class="text-danger">{{$errors->first('email')}}</span>
@@ -70,7 +70,7 @@
                             <div class="form-group">
                               <label for="exampleInputPassword1">Password</label>
                               <input type="password" class="form-control" id="password" name="password" value="{{old('password')}}" placeholder="Password">
-                            </div>
+                            </div> --}}
                             <div class="form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label" for="exampleCheck1">Check me out</label>

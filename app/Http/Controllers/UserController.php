@@ -35,6 +35,16 @@ class UserController extends Controller
  $level = $request->level;
  $no_telp = $request->no_telp;
  $password = Hash::make ($request->password);
+
+
+ $request->validate([
+     'name' => 'required|min:3',
+     'email' => 'required|unique:users,email',
+     'jk' => 'required',
+     'level' => 'required',
+     'no_telp' => 'required',
+     'password' => 'required', 
+ ]);
 // dd($request->all())
 //  buat object untuk simpan data ke table
 $user = new User;
@@ -92,6 +102,8 @@ public function update(Request $request){
     
 
 public function delete($id) {
-$user = User::delete($id);
+User::find($id)->delete();
+
+return redirect('users');
 }
 }

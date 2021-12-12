@@ -27,5 +27,11 @@ Route::post('/users/store', [App\Http\Controllers\UserController::class, 'store'
 Route::get('/users/edit/{id}', [App\Http\Controllers\UserController::class, 'edit'])->name('users-edit');
 Route::post('/users/update', [App\Http\Controllers\UserController::class, 'update'])->name('users-update');
 Route::get('/users/delete/{id}', [App\Http\Controllers\UserController::class, 'delete'])->name('users-delete');
+Route::get('/kategori', [App\Http\Controllers\Kategori::class, 'index'])->name('kategori');
+Route::get('/kategori/add', [App\Http\Controllers\Kategori::class, 'create'])->name('kategori-add');
+Route::post('/kategori/store', [App\Http\Controllers\Kategori::class, 'store'])->name('kategori-store');
+Route::get('/kategori/edit/{id}', [App\Http\Controllers\Kategori::class, 'edit'])->name('kategori-edit');
+Route::post('/kategori/update', [App\Http\Controllers\Kategori::class, 'update'])->name('kategori-update');
+Route::get('/kategori/delete/{id}', [App\Http\Controllers\Kategori::class, 'delete'])->name('kategori-delete');
 
 
